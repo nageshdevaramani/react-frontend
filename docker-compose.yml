@@ -1,6 +1,7 @@
 services:
   frontend:
-    image: frontend-app:${IMAGE_TAG}
+    image: frontend-app:${IMAGE_TAG:-latest}
+    build: .
     container_name: frontend
     ports:
       - "3000:80"
