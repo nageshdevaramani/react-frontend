@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools {
+            nodejs "node-18"
+        }
     environment {
         IMAGE_NAME = "frontend-app"
         IMAGE_TAG = "${BUILD_NUMBER}"
