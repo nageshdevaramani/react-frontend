@@ -1,9 +1,10 @@
 services:
   frontend:
-    build: .
+    image: frontend-app:${IMAGE_TAG}
     container_name: frontend
     ports:
       - "3000:80"
+    restart: unless-stopped
     networks:
       - devops-net
 
