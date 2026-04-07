@@ -16,7 +16,7 @@
     function sendName() {
       const name = document.getElementById("nameInput").value;
 
-      fetch(`http://localhost:4000/?name=${name}`)
+      fetch(`/api/?name=${name}`)
         .then(res => res.json())
         .then(data => {
           document.getElementById("result").innerText = data.message;
