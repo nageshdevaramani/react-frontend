@@ -1,0 +1,8 @@
+{
+  "name": "react-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo Building frontend... && mkdir build && echo '<h1>React App Running</h1>' > build/index.html"
+  }
+}
